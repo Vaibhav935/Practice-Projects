@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color:rgb(240, 228, 211); */
+  background-image: url(https://media.istockphoto.com/id/1166350281/vector/green-leaf-and-stave-sunbeam-image.jpg?s=612x612&w=0&k=20&c=Pcs5vc-TWToZlQOv959oodsjxvuxqXZS3VZ48ot8mfE=);
+  flex-direction: column;
+  background-size: cover;
+  gap: 50px;
+}
+h1 {
+  color: black;
+  font-size: 50px;
+}
+#board {
+  display: flex;
+  height: 200px;
+  width: 90%;
+  /* border: 2px solid black; */
+  border-radius: 10px;
+  position: relative;
+  font-size: 12px;
+}
+#up {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 60%;
+  /* border: 1px solid black; */
+  justify-content: space-between;
+  padding: 0 20px 0 20px;
+}
+#up .two {
+  display: flex;
+  /* border: 2px solid black; */
+  gap: 1px;
+  /* flex: 1; */
+}
+#up .three {
+  display: flex;
+  /* border: 2px solid green; */
+  /* flex: 2; */
+  gap: 1px;
+  /* align-items: center;
+    justify-content: center; */
+}
+#down {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  /* background-color: white; */
+  /* gap: 2px; */
+}
+.upkey {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  width: 40px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  box-shadow: 0 2.5px 1px 1px grey;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.downkey {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: white;
+  border: 0.5px solid grey;
+  box-shadow: 0 2.5px 1px 1px grey;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}

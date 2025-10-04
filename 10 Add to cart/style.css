@@ -1,0 +1,9 @@
+.products::-webkit-scrollbar,
+.categories::-webkit-scrollbar,
+.populars::-webkit-scrollbar {
+  display: none;
+}
+
+.shader {
+  background: linear-gradient(to right bottom, #69628a, #040309);
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,11 @@
+.products,
+.categories,
+.populars {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.shader {
+  background: linear-gradient(to right bottom, #69628a, #040309);
+}

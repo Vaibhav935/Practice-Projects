@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+#bg {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(225, 222, 222);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#main {
+    font-size: 17px;
+  height: 85%;
+  width: 90%;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+#nav {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+#menu {
+  padding: 8px 12px;
+  border-radius: 20px;
+  background-color: #fff;
+  border: 1px solid black;
+}
+
+#nav-part1 > i {
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+#nav-part3 > #login,
+#signup {
+        font-size: 17px;
+    font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 20px;
+  background-color: #fff;
+  border: 1px solid black;
+}
+
+#nav-part2{
+    font-weight: 600;
+}
+
+#nav-part3 > #signup {
+    border: none ;
+  background-color: orangered;
+  color: white;
+}
+
+#bgt{
+    font-size:100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+img{
+    height: 380px;
+    width: 300px;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+}
+
+#img1{
+    transform: translate(-50%,-50%) rotate(-30deg);
+}
+#img2{
+    transform: translate(-50%,-50%) rotate(-20deg);
+}
+#img3{
+    transform: translate(-50%,-50%) rotate(-10deg);
+}
+
+#btm-left{
+    position: absolute;
+    bottom: 12%;
+    left: 8%;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+#btm-right{
+    position: absolute;
+    bottom: 12%;
+    right: 8%;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+#icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}

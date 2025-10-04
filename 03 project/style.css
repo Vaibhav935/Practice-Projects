@@ -1,0 +1,523 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Roboto Mono", monospace;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#main {
+  width: 100%;
+  height: auto;
+  /* background-color: beige; */
+  padding: 35px 60px 0 60px;
+}
+#logo img {
+  height: 14px;
+  cursor: pointer;
+  object-fit: cover;
+}
+#menu {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+#menu p {
+  font-size: 11px;
+  /* justify-content: center; */
+  cursor: pointer;
+  /* padding-top: 14px; */
+}
+
+#btn1 button {
+  padding: 12px 20px;
+  background-color: #111;
+  color: #fff;
+  border-radius: 50px;
+  font-size: 13px;
+  margin-left: 15px; 
+
+}
+
+
+
+main {
+  padding-top: 50px;
+}
+
+#img1 {
+  width: 100%;
+  height: 10%;
+}
+#hero-text1 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 0 0 0;
+  font-size: 12px;
+}
+
+#main-body {
+  padding-top: 50px;
+  display: flex;
+  /* padding-bottom: 50px; */
+}
+#main-left {
+  width: 50%;
+  padding-top: 30px;
+}
+#main-left h1 {
+  font-size: 80px;
+  line-height: 80px;
+  font-weight: 200;
+  color: #1e1e1e;
+  letter-spacing: 3px;
+}
+#main-left p {
+  padding-top: 10px;
+  font-size: 23px;
+  font-weight: 300;
+  line-height: 40px;
+  /* word-spacing: 5px; */
+  letter-spacing: 1px;
+}
+
+#home-main-table {
+  padding-top: 40px;
+  padding-right: 100px;
+}
+.h-table-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 32px;
+}
+.h-table-row h3 {
+  padding: 10px 0 10px 0;
+  font-weight: 300;
+    color: #1e1e1e;
+}
+.h-table-line {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(17, 17, 17);
+}
+#main-right-img {
+  width: 50%;
+  /* height: 10%; */
+  object-fit: cover;
+}
+
+#main-body2 {
+  padding-top: 50px;
+  display: flex;
+}
+
+#img2 {
+  height: 480px;
+  width: 35%;
+  object-fit: cover;
+}
+#body-two-text {
+  padding: 40px;
+  position: relative;
+}
+#body-two-text h1 {
+  font-size: 80px;
+  line-height: 80px;
+  font-weight: 200;
+  color: #1e1e1e;
+  letter-spacing: 3px;
+}
+
+
+#body-two-text p {
+  padding-top: 80px;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 2px;
+  color: rgb(74, 74, 74);
+  width: 100%;
+}
+.vertical-text {
+  position: absolute;
+  right: -90px;
+  top: 100px;
+  transform: rotate(90deg);
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: slideUp 1s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal-scroll {
+  font-size: 2rem;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: slide-up linear both;
+  animation-timeline: view(); /* This is the key part */
+  animation-range: entry 0% cover 30%; /* When to start and end animation */
+}
+
+@keyframes slide-up {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#main-body3 {
+  padding-top: 50px;
+  display: flex;
+}
+#body-three-text{
+    padding: 40px 20px 0 0;
+}
+#body-three-text h1{
+  font-size: 90px;
+  line-height: 80px;
+  font-weight: 200;
+  color: #1e1e1e;
+  letter-spacing: 3px;
+}
+
+#img3{
+    height: 100%;
+    width: 50% ;
+}
+
+
+#section{
+    padding-top: 50px;
+
+}
+.section-half{
+    display: flex;
+    justify-content: space-between;
+
+}
+.s-lines{
+    width: 100%;
+    height: 1px;
+    background-color:  rgb(200, 189, 189);
+}
+.sections{
+    width: 48%;
+}
+.sections h5{
+    padding-top: 7px;
+    font-size: 30px;
+    font-weight: 300;
+}
+.sections p{
+    padding-top: 7px;
+    color: rgb(127, 125, 125);
+}
+.about-text p{
+    width: 100%;
+}
+.about-arrow{
+    display: flex;
+    padding: 30px 0;
+    align-items: center;
+    gap: 8px;
+}
+.about-arrow i{
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 50px;
+    
+}
+.about-arrow span{
+    font-weight: 200;
+}
+
+
+.h-line{
+    width: 100%;
+    height: 1px;
+    background-color:  rgb(200, 189, 189);
+    margin-top: 100px;
+}
+
+#hero-img2{
+    width: 100%;
+    height: 10%;
+    margin: 60px 0;
+}
+
+.body4-half{
+    display: flex;
+    gap: 35px;
+    padding: 15px;
+}
+.three{
+    width: 31.67%;
+}
+.three-text{
+    width: 100%;
+    /* background-color: pink; */
+}
+    
+
+.three-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+}
+.about-text span{
+    font-size: 60px;
+}
+
+#main-body5 h1{
+    font-size: 140px;
+    font-weight: 300;
+    text-align: right;
+}
+
+
+#table{
+    /* display: flex; */
+    /* align-items: right; */
+    /* text-align: right; */
+    padding-left: 35%;
+}
+.table-row{
+    display: flex;
+    width: 100%;
+    /* background-color: pink; */
+    position: relative;
+    text-align: center;
+    align-items: center;
+    padding: 22px 10px 22px 10px;
+}
+.table-row span{
+    font-size: 12px;
+}
+.table-row h5{
+    padding: 0 50px 0 22px;
+    font-size: 40px;
+    font-weight: 300;
+}
+.table-line{
+    width: 100%;
+    height: 1px;
+    background-color:  rgb(200, 189, 189);
+}
+.brand{
+    position: absolute;
+    right: 0;
+}
+
+
+#main-body6{
+    padding-top: 5px;
+    width: 100%;
+    height: 100%;
+}
+#team{
+    display: flex;
+    padding: 50px 0 50px 0;
+    /* text-align: center; */
+}
+#team h1,p{
+    width: 50%;
+    /* text-align: center; */
+}
+#team h1{
+    font-size: 130px;
+    font-weight: 300;
+}
+#team p{
+    font-size: 21px;
+    padding-top: 55px;
+}
+
+#card{
+    display: flex;
+    gap: 50px;
+}
+
+.cards{
+    width: 25%;
+    height: aut0;
+    object-fit: cover;
+}
+.cards h5{
+    font-size: 25px;
+    font-weight: 300;
+    padding-bottom: 15px;
+}
+.cards img{
+    width: 100%;
+    object-fit: cover;
+}
+.profession{
+    padding-top: 10px;
+}
+.card-about0{
+    display: flex;
+    justify-content: space-between;
+}
+.card-about0 p{
+    font-size: 12px;
+}
+.card-about p{
+    font-size: 16px;
+    width: 100%;
+    padding-top: 20px;
+        color: rgb(127, 125, 125);
+}
+
+
+#main-body7{
+    padding-top: 25px;
+}
+
+#main-body7{
+    padding-left: 50%;
+    padding-bottom: 100px;
+}
+.body7-half p{
+    padding-top: 10px;
+    font-size: 12px;
+}
+.body7-half h5{
+    padding-top: 20px;
+    font-size: 60px;
+    font-weight: 350;
+    text-transform: uppercase;
+    line-height: 70px;
+    padding-bottom: 30px;
+}
+
+footer{
+    height: 163%;
+    width: 100%;
+    background-color: #111111;
+    padding-top: 100px;
+}
+#footer-up{
+    width: 100%;
+    padding: 0 50px 50px 50px;
+}
+#footer-up img{
+    width: 100%;
+    /* height: 100px; */
+    object-fit: cover;
+}
+#footer-up h1{
+    text-align: center;
+    color: white;
+    font-size: 70px;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding-top: 50px;
+    line-height: 73px;
+    word-spacing: -19px;
+
+}
+.button{
+    text-align: center;
+    padding-top: 50px;
+}
+.footer-button{
+    padding: 10px 18px;
+    border-radius: 50px;
+    /* text-align: center; */
+    border: none;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.f-line{
+    width: 100%;
+    height: 0.1px;
+    background-color:  rgb(230, 227, 227);
+    margin-top: 80px;
+    opacity: 0.1;
+}
+
+
+#footer-down{
+    padding: 50px 60px 30px 60px;
+    display: flex;
+    gap: 50px;
+}
+.column{
+    width: 25%;
+    color: white;
+    text-transform: uppercase;
+}
+.column h5{
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 15px;
+
+}
+#icon{
+    padding-top: 200px;
+}
+.icons i{
+    background-color: white;
+    color: black;
+    padding: 10px ;
+    border-radius: 50px;
+}
+.icons{
+    padding-top: 25px;
+}
+.icons span{
+    font-size: 14px;
+}
+.column div{
+    font-size: 14px;
+    padding-top: 25px ;
+}
+
+#info{
+    padding: 50px 60px 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+#name{
+    opacity: 0.5;
+    font-size: 14px;
+}
+.icon-top a {
+    color: white;
+    text-decoration: none;
+    align-items: center;
+}
+.icon-top i{
+        background-color: white;
+    color: black;
+    padding: 10px ;
+    border-radius: 50px;
+}

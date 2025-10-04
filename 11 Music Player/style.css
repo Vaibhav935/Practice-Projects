@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: #f4f5fc;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 85%;
+  width: 100%;
+  background-color: #24293e;
+  display: flex;
+  padding: 2vw 10vw;
+  gap: 20px;
+}
+#main #left {
+  height: 100%;
+  width: 45%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
+#main #right {
+  height: 100%;
+  width: 55%;
+  padding: 0.5vw 3vw;
+  background-color: #2F3855;
+  border-radius: 5px;
+}
+#main #right h3 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+#main #right #all-song {
+  height: 80%;
+  width: 100%;
+}
+#main #right #all-song .song-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid #5a5a5a;
+}
+#main #right #all-song .song-card .details {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  pointer-events: none;
+}
+#main #right #all-song .song-card .details img {
+  height: 45px;
+  width: 45px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#main #right #all-song .song-card .details h2 {
+  font-size: 17px;
+}
+#main #right #all-song .song-card .time {
+  font-size: 14px;
+  pointer-events: none;
+}
+#main #right #all-song .song-card:hover {
+  background-color: #3d4970;
+  border-radius: 5px;
+  cursor: pointer;
+  scale: 1.01;
+}
+#main #right #all-song .song-card:active {
+  scale: 0.99;
+}
+#main #right #all-song .song-card:nth-last-child(1) {
+  border-bottom: 1px solid #5a5a5a;
+}
+
+#player {
+  height: 15%;
+  width: 100%;
+  background-color: #2F3855;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+#player h3 {
+  padding: 10px;
+  background-color: #24293e;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#player h3 i {
+  font-size: 20px;
+  font-weight: 100;
+}
+#player h3:hover {
+  cursor: pointer;
+  background-color: #4a5375;
+}
+#player h3:active {
+  scale: 0.95;
+}/*# sourceMappingURL=style.css.map */
