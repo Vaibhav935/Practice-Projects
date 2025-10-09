@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create To-Do List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="main">
+      <div id="input">
+        <div id="task">
+          <input
+            id="task-inp"
+            type="text"
+            placeholder="Enter Task..."
+            autocomplete="off"
+            list="none"
+          />
+        </div>
+        <div id="desc">
+          <textarea
+            id="desc-inp"
+            type="textarea"
+            placeholder="Enter Details..."
+          ></textarea>
+        </div>
+        <div id="add-btn">Add Task</div>
+      </div>
+      <div id="output">
+        <h1>To-Do List</h1>
+        <div class="task-list">
+          <div class="tasks">
+            <h2 id="task-val">Play Chess</h2>
+            <p id="task-desc">Have to play chess daily to master it.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

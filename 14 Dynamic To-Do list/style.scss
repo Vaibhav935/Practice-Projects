@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100vh;
+    width: 100vw;
+    background-color: #131313;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    #input{
+        height: 90%;
+        width: 47%;
+        border-radius: 40px;
+        background-color: #252525;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+
+        #task{
+            width: 100%;
+            height: 20%;
+            border-radius: 40px;
+            background-color: #505050;
+            display: flex;
+            align-items: center;
+            justify-content: start; 
+            padding: 30px;           
+
+            input{
+                background-color: #505050;
+                border: none;
+                font-size: 30px;
+                color: white;
+                outline: none;
+                
+
+            }::placeholder{
+                color: #7A7E7C;
+            }
+
+
+        }
+        #desc{
+            height: 80%;
+            width: 100%;
+            border-radius: 40px;
+            background-color: #505050;
+            padding: 30px;
+
+            textarea{
+                background-color: #505050;
+                border: none;
+                font-size: 30px;
+                color: white;
+                outline: none;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                resize: none;
+
+            }::placeholder{
+                color: #7A7E7C;
+            }
+
+        }
+
+        #add-btn{
+            padding: 10px 40px;
+            border-radius: 10px;
+            background-color: red;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            width: max-content;
+            align-self: center;
+            font-weight: 600;
+            font-size: 25px;
+        }
+
+        
+    }
+    #output{
+        height: 90%;
+        width: 47%;
+        border-radius: 40px;
+        background-color: #252525;
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+
+
+        h1{
+            color: white;
+            font-size: 50px;
+            margin-bottom: 30px;
+        }
+
+        .task-list{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            
+
+            .tasks{
+                color: white;
+                background-color: #505050;
+                border-radius: 10px;
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+        }
+    }
+}
